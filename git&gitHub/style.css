@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.nav{
+    background: #343a40;
+    color: white;
+}
+.nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 25px 10px 0 0;
+    padding: 4px;
+    border: 2px solid transparent;
+    
+}
+.nav ul li a{
+    text-decoration: none;
+    color: white;
+
+}
+
+.nav ul li:hover, #home{
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 8px;
+    
+}
+
+/* navigation :end */
+
+/* templet :start */
+
+#templet h2{
+    
+}
