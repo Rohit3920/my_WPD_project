@@ -3,9 +3,16 @@
     margin: 0;
 }
 .nav{
-    background: #343a40;
+    background: #34495e;
     color: white;
 }
+#git-logo{
+width: 70px;
+
+padding-top: 4px;
+color: white;
+}
+
 .nav ul li{
     list-style: none;
     display: inline-block;
@@ -30,6 +37,18 @@
 
 /* templet :start */
 
-#templet h2{
+#templet {
     
+    background: url(image/git-templet.jpg) 0 0;
+    background-size: cover;
+}
+#templet h2{
+    margin-top: 20% ;
+    padding: 5px 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#templet p{
+    background-color: #f1c40fde;
+    padding: 5px 10px;
 }
