@@ -114,9 +114,15 @@
                         <li><button class="btn btn-outline-success" id="check-email">Check Email</button></li>
                     </ul>
                 </div>
+
+                <div class="col-12 text-center hide" id="display-setup-3">
+                    <button class="btn btn-check btn-primary" id="btn-init">SETUP & INIT REPOSITORY INFO</button>
+                    <ul class=" content-2 hide" id="init-list">
+                        <li><button class="btn btn-outline-success" id="git-init">Git Init</button></li>
+                        <li><button class="btn btn-outline-success" id="git-clone">Git Clone</button></li>
+                    </ul>
+                </div>
                 <div id="result">
-
-
                     <!-- Setup content -->
                     <div id="setup-content">
                         <div id="set-name-value" class="hide">
@@ -155,6 +161,19 @@
                             </div>
                         </div>
 
+                    </div>
+
+                    <div class="init-content">
+                        <div id="init-value" class="hide">
+                            <h4><b>git init</b></h4><br><br>
+                            <p>initialize an existing directory as a Git repository</p>
+                        </div>
+
+                        <div id="clone-value" class="hide">
+                            <h4><b>git clone [url]</b></h4><br><br>
+                            <p>retrieve an entire repository from a hosted location via URL
+                            </p>
+                        </div>
                     </div>
                 </div>
 

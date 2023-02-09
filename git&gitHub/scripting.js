@@ -2,6 +2,9 @@
 
 
 $(document).ready(function () {
+
+
+    
     $("#setup").click(function () {
         console.log("hlo function");
         $("#display-setup-1").slideToggle();
@@ -61,6 +64,30 @@ $(document).ready(function () {
         $("#set-ui-color-value").hide();
         $("#set-email-value").hide();
         $("#set-name-value").hide();
+    });
+
+
+
+
+    // init content start
+
+    $("#init").click(function () {
+        
+        $("#display-setup-3").slideToggle();
+    });
+
+    $("#btn-init").click(function () {
+        $("#init-list").toggle();
+    });
+
+    $("#git-init").click(function () {
+        $("#init-value").show();
+        $("#clone-value").hide();
+    });
+
+    $("#git-clone").click(function () {
+        $("#init-value").hide();
+        $("#clone-value").show();
     });
 });
 
