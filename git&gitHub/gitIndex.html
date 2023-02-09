@@ -64,43 +64,109 @@
 
     <div id="section-1">
         <div class="container">
+            <h2 class="text-center text-secondary pt-md-5">Git commands </h2>
             <div class="row p-md-5">
-                <div id="setup" class="col-2 m-md-2 m-sm-1"><button class="btn">SerUp</button></div>
-                <div id="init" class="col-2 m-md-2 m-sm-1"><button class="btn">SetUp & Init</button></div>
-                <div id="stage" class="col-2 m-md-2 m-sm-1"><button class="btn">Stage & Snapshot</button></div>
-                <div id="barnch" class="col-2 m-md-2 m-sm-1"><button class="btn">Branch & merge</button></div>
-                <div id="inspect" class="col-2 m-md-2 m-sm-1"><button class="btn">Inspect & Compare</button></div>
-                <div id="uapdate" class="col-2 m-md-2 m-sm-1"><button class="btn">Share & Update</button></div>
-                <div id="tracking" class="col-2 m-md-2 m-sm-1"><button class="btn">tracking Path Changes</button></div>
-                <div id="history" class="col-2 m-md-2 m-sm-1"><button class="btn">ReWrite History</button></div>
-                <div id="ignoring" class="col-2 m-md-2 m-sm-1"><button class="btn">Ignoring Patterns</button></div>
-                <div id="tem-commit" class="col-2 m-md-2 m-sm-1"><button class="btn">Temporary Commit</button></div>
+
+                <div id="setup" class="col-4 col-lg-2 m-md-2 m-sm-1"><button
+                        class="btn btn-outline-danger">SerUp</button></div>
+                <div id="init" class="col-4 col-lg-2 m-md-2 m-sm-1"><button class="btn btn-outline-danger">SetUp &
+                        Init</button></div>
+                <div id="stage" class="col-4 col-lg-2 m-md-2 m-sm-1"><button class="btn btn-outline-danger">Stage &
+                        Snapshot</button></div>
+                <div id="barnch" class="col-4 col-lg-2 m-md-2 m-sm-1"><button class="btn btn-outline-danger">Branch &
+                        merge</button></div>
+                <div id="inspect" class="col-4 col-lg-2 m-md-2 m-sm-1"><button class="btn btn-outline-danger">Inspect &
+                        Compare</button></div>
+                <div id="uapdate" class="col-4 col-lg-2 m-md-2 m-sm-1"><button class="btn btn-outline-danger">Share &
+                        Update</button></div>
+                <div id="tracking" class="col-4 col-lg-2 m-md-2 m-sm-1"><button class="btn btn-outline-danger">tracking
+                        Path Changes</button></div>
+                <div id="history" class="col-4 col-lg-2 m-md-2 m-sm-1"><button class="btn btn-outline-danger">ReWrite
+                        History</button></div>
+                <div id="ignoring" class="col-4 col-lg-2 m-md-2 m-sm-1"><button class="btn btn-outline-danger">Ignoring
+                        Patterns</button></div>
+                <div id="tem-commit" class="col-4 col-lg-2 m-md-2 m-sm-1"><button
+                        class="btn btn-outline-danger">Temporary Commit</button></div>
             </div>
         </div>
     </div>
 
 
-    <div class="section-2">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="row">
-                        <div class="col-3">
 
+
+    <div id="section-2">
+        <div class="container" id="txt">
+            <div class="row content-1">
+                <div class="col-6 hide" id="display-setup-1">
+                    <button class="btn btn-set btn-primary" id="btn-set">SET REPOSITORY INFO</button>
+                    <ul class="row content-1-1 " id="set-list">
+                        <li id="set-name"><button class="btn btn-outline-success ">Set Name</button></li>
+                        <li id="set-email"><button class="btn btn-outline-success">Set Email</button></li>
+                        <li id="set-ui-color"><button class="btn btn-outline-success">Set Ui-color</button></li>
+                    </ul>
+                </div>
+
+
+                <div class="col-6 hide" id="display-setup-2">
+                    <button class="btn btn-check btn-primary" id="btn-check">CHECK REPOSITORY INFO</button>
+                    <ul class=" content-1-2" id="check-list">
+                        <li><button class="btn btn-outline-success" id="check-name">Check Name</button></li>
+                        <li><button class="btn btn-outline-success" id="check-email">Check Email</button></li>
+                    </ul>
+                </div>
+                <div id="result">
+
+
+                    <!-- Setup content -->
+                    <div id="setup-content">
+                        <div id="set-name-value" class="hide">
+                            <h4><b>git config --global user.name “[firstname lastname]”</b></h4><br><br>
+                            <p>set a name that is identifiable for credit when review version history</p>
                         </div>
-                        <div class="col-9">
-                            
+
+                        <div class="hide" id="set-email-value">
+                            <h4>
+                                <b>git config --global user.email “[valid-email]”</b>
+                            </h4><br><br>
+                            <p>set an email address that will be associated with each history marker</p>
                         </div>
+                        <div id="set-ui-color-value" class="hide">
+                            <h4>
+                                <b>git config --global color.ui auto</b>
+                            </h4><br><br>
+                            <p>set automatic command line coloring for Git for easy reviewing</p>
+                        </div>
+
+
+
+
+
+                        <!-- check content -->
+
+                        <div id="check-content">
+                            <div id="check-name-content" class="hide">
+                                <h4><b>git config --global user.name</b></h4><br><br>
+                                <p>check a name that is identifiable for credit when review version history</p>
+                            </div>
+
+                            <div id="check-email-content" class="hide">
+                                <h4><b>git config --global user.email</b></h4><br><br>
+                                <p>check an email address that will be associated with each history marker</p>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
+
+
+
+
             </div>
         </div>
     </div>
 
     <script src="../mainfiles/jQuery/jquery-3.6.1.min.js"></script>
-    <scriptb class="jQuery">
-
-    </scriptb>
+    <script src="scripting.js"></script>
 </body>
 
 </html>
