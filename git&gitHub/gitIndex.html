@@ -65,27 +65,27 @@
     <div id="section-1">
         <div class="container">
             <h2 class="text-center text-secondary pt-md-5">Git commands </h2>
-            <div class="row p-md-5">
+            <div class="row p-md-5" id="git-cmd-btns">
 
                 <div id="setup" class="col-4 col-lg-2 m-md-2 m-sm-1"><button
                         class="btn btn-outline-danger">SerUp</button></div>
-                <div id="init" class="col-4 col-lg-2 m-md-2 m-sm-1"><button class="btn btn-outline-danger">SetUp &
+                <div id="init" class="col-4 col-lg-2 m-md-2 m-sm-1"><button id="gbtn" class="btn btn-outline-danger">SetUp &
                         Init</button></div>
-                <div id="stage" class="col-4 col-lg-2 m-md-2 m-sm-1"><button class="btn btn-outline-danger">Stage &
+                <div id="stage" class="col-4 col-lg-2 m-md-2 m-sm-1"><button id="gbtn" class="btn btn-outline-danger">Stage &
                         Snapshot</button></div>
-                <div id="barnch" class="col-4 col-lg-2 m-md-2 m-sm-1"><button class="btn btn-outline-danger">Branch &
+                <div id="barnch" class="col-4 col-lg-2 m-md-2 m-sm-1"><button id="gbtn" class="btn btn-outline-danger">Branch &
                         merge</button></div>
-                <div id="inspect" class="col-4 col-lg-2 m-md-2 m-sm-1"><button class="btn btn-outline-danger">Inspect &
+                <div id="inspect" class="col-4 col-lg-2 m-md-2 m-sm-1"><button id="gbtn" class="btn btn-outline-danger">Inspect &
                         Compare</button></div>
-                <div id="uapdate" class="col-4 col-lg-2 m-md-2 m-sm-1"><button class="btn btn-outline-danger">Share &
+                <div id="uapdate" class="col-4 col-lg-2 m-md-2 m-sm-1"><button id="gbtn" class="btn btn-outline-danger">Share &
                         Update</button></div>
-                <div id="tracking" class="col-4 col-lg-2 m-md-2 m-sm-1"><button class="btn btn-outline-danger">tracking
+                <div id="tracking" class="col-4 col-lg-2 m-md-2 m-sm-1"><button id="gbtn" class="btn btn-outline-danger">tracking
                         Path Changes</button></div>
-                <div id="history" class="col-4 col-lg-2 m-md-2 m-sm-1"><button class="btn btn-outline-danger">ReWrite
+                <div id="history" class="col-4 col-lg-2 m-md-2 m-sm-1"><button id="gbtn" class="btn btn-outline-danger">ReWrite
                         History</button></div>
-                <div id="ignoring" class="col-4 col-lg-2 m-md-2 m-sm-1"><button class="btn btn-outline-danger">Ignoring
+                <div id="ignoring" class="col-4 col-lg-2 m-md-2 m-sm-1"><button id="gbtn" class="btn btn-outline-danger">Ignoring
                         Patterns</button></div>
-                <div id="tem-commit" class="col-4 col-lg-2 m-md-2 m-sm-1"><button
+                <div id="tem-commit" class="col-4 col-lg-2 m-md-2 m-sm-1"><button id="gbtn"
                         class="btn btn-outline-danger">Temporary Commit</button></div>
             </div>
         </div>
@@ -97,7 +97,7 @@
     <div id="section-2">
         <div class="container" id="txt">
             <div class="row content-1">
-                <div class="col-6 hide" id="display-setup-1">
+                <div class="col-6 hide text-right a1" id="display-setup-1">
                     <button class="btn btn-set btn-primary" id="btn-set">SET REPOSITORY INFO</button>
                     <ul class="row content-1-1 " id="set-list">
                         <li id="set-name"><button class="btn btn-outline-success ">Set Name</button></li>
@@ -107,7 +107,7 @@
                 </div>
 
 
-                <div class="col-6 hide" id="display-setup-2">
+                <div class="col-6 hide a1" id="display-setup-2">
                     <button class="btn btn-check btn-primary" id="btn-check">CHECK REPOSITORY INFO</button>
                     <ul class=" content-1-2" id="check-list">
                         <li><button class="btn btn-outline-success" id="check-name">Check Name</button></li>
@@ -115,9 +115,9 @@
                     </ul>
                 </div>
 
-                <div class="col-12 text-center hide" id="display-setup-3">
+                <div class="col-12 text-center hide a1" id="display-setup-3">
                     <button class="btn btn-check btn-primary" id="btn-init">SETUP & INIT REPOSITORY INFO</button>
-                    <ul class=" content-2 hide" id="init-list">
+                    <ul class=" content-2 hide text-center" id="init-list">
                         <li><button class="btn btn-outline-success" id="git-init">Git Init</button></li>
                         <li><button class="btn btn-outline-success" id="git-clone">Git Clone</button></li>
                     </ul>
@@ -163,7 +163,7 @@
 
                     </div>
 
-                    <div class="init-content">
+                    <div id="init-content">
                         <div id="init-value" class="hide">
                             <h4><b>git init</b></h4><br><br>
                             <p>initialize an existing directory as a Git repository</p>
@@ -175,6 +175,7 @@
                             </p>
                         </div>
                     </div>
+
                 </div>
 
 
@@ -185,7 +186,7 @@
     </div>
 
     <script src="../mainfiles/jQuery/jquery-3.6.1.min.js"></script>
-    <script src="scripting.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
