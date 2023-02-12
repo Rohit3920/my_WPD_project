@@ -101,17 +101,17 @@
 
                 <div class="col-6 hide text-right " id="display-setup-1">
                     <button class="btn btn-set btn-primary" id="btn-set">SET REPOSITORY INFO</button>
-                    <ul class="row content-1-1 " id="set-list">
-                        <li id="set-name"><button class="btn btn-outline-success ">Set Name</button></li>
-                        <li id="set-email"><button class="btn btn-outline-success">Set Email</button></li>
-                        <li id="set-ui-color"><button class="btn btn-outline-success">Set Ui-color</button></li>
+                    <ul class="row content-1 " id="set-list">
+                        <li><button id="set-name" class="btn btn-outline-success ">Set Name</button></li>
+                        <li><button id="set-email" class="btn btn-outline-success">Set Email</button></li>
+                        <li><button id="set-ui-color" class="btn btn-outline-success">Set Ui-color</button></li>
                     </ul>
                 </div>
 
 
                 <div class="col-6 hide " id="display-setup-2">
                     <button class="btn btn-check btn-primary" id="btn-check">CHECK REPOSITORY INFO</button>
-                    <ul class=" content-1-2" id="check-list">
+                    <ul class=" content-2" id="check-list">
                         <li><button class="btn btn-outline-success" id="check-name">Check Name</button></li>
                         <li><button class="btn btn-outline-success" id="check-email">Check Email</button></li>
                     </ul>
@@ -119,7 +119,7 @@
 
                 <div class="col-12 text-center hide " id="display-setup-3">
                     <button class="btn btn-check btn-primary" id="btn-init">SETUP & INIT REPOSITORY INFO</button>
-                    <ul class=" content-2 hide text-center" id="init-list">
+                    <ul class=" content-3 hide text-center" id="init-list">
                         <li><button class="btn btn-outline-success" id="git-init">Git Init</button></li>
                         <li><button class="btn btn-outline-success" id="git-clone">Git Clone</button></li>
                     </ul>
@@ -127,81 +127,81 @@
 
                 <div class="col-12 text-center hide " id="display-setup-4">
                     <button class="btn btn-check btn-primary" id="btn-stage">STAGE & SNAPSHOT REPOSITORY INFO</button>
-                    <ul class=" content-2 hide text-center" id="init-list">
-                        <li><button class="btn btn-outline-success" id="git-init">Git Status</button></li>
-                        <li><button class="btn btn-outline-success" id="git-clone">Git Add File</button></li>
-                        <li><button class="btn btn-outline-success" id="git-init">Git Reset File</button></li>
-                        <li><button class="btn btn-outline-success" id="git-clone">Git Diff Changes</button></li>
-                        <li><button class="btn btn-outline-success" id="git-init">Git diff staged</button></li>
-                        <li><button class="btn btn-outline-success" id="git-clone">Git Commit</button></li>
+                    <ul class=" content-4 hide text-center" id="stage-list">
+                        <li><button class="btn btn-outline-success" id="git-status">Git Status</button></li>
+                        <li><button class="btn btn-outline-success" id="git-addFile">Git Add File</button></li>
+                        <li><button class="btn btn-outline-success" id="git-resetFile">Git Reset File</button></li>
+                        <li><button class="btn btn-outline-success" id="git-diffChange">Git Diff Changes</button></li>
+                        <li><button class="btn btn-outline-success" id="git-diffStage">Git diff staged</button></li>
+                        <li><button class="btn btn-outline-success" id="git-commit">Git Commit</button></li>
                     </ul>
                 </div>
 
                 <div class="col-12 text-center hide " id="display-setup-5">
                     <button class="btn btn-check btn-primary" id="btn-branch">BRANCH & MERGE REPOSITORY INFO</button>
-                    <ul class=" content-2 hide text-center" id="init-list">
-                        <li><button class="btn btn-outline-success" id="git-init">Git Active Branch</button></li>
-                        <li><button class="btn btn-outline-success" id="git-clone">Git Create Branch</button></li>
-                        <li><button class="btn btn-outline-success" id="git-init">Git Switch & Checkout Branch</button></li>
-                        <li><button class="btn btn-outline-success" id="git-clone">Git Merge Branch</button></li>
-                        <li><button class="btn btn-outline-success" id="git-init">Git Current Branch History</button></li>
+                    <ul class=" content-5 hide text-center" id="branch-list">
+                        <li><button class="btn btn-outline-success" id="git-activeBranch">Git Active Branch</button></li>
+                        <li><button class="btn btn-outline-success" id="git-createBranch">Git Create Branch</button></li>
+                        <li><button class="btn btn-outline-success" id="git-switchBranch">Git Switch & Checkout Branch</button></li>
+                        <li><button class="btn btn-outline-success" id="git-mergeBranch">Git Merge Branch</button></li>
+                        <li><button class="btn btn-outline-success" id="git-HistoryBranch">Git Current Branch History</button></li>
                     </ul>
                 </div>
 
 
                 <div class="col-12 text-center hide " id="display-setup-6">
                     <button class="btn btn-check btn-primary" id="btn-inspect">INSPECT & COMPARE REPOSITORY INFO</button>
-                    <ul class=" content-2 hide text-center" id="init-list">
-                        <li><button class="btn btn-outline-success" id="git-init">Git Log</button></li>
-                        <li><button class="btn btn-outline-success" id="git-clone">Git Commit branches</button></li>
-                        <li><button class="btn btn-outline-success" id="git-init">Git File Across Renames</button></li>
-                        <li><button class="btn btn-outline-success" id="git-clone">Git Diff Branches</button></li>
-                        <li><button class="btn btn-outline-success" id="git-init">Git Show Object</button></li>
+                    <ul class=" content-6 hide text-center" id="inspect-list">
+                        <li><button class="btn btn-outline-success" id="git-log">Git Log</button></li>
+                        <li><button class="btn btn-outline-success" id="git-commitBranch">Git Commit branches</button></li>
+                        <li><button class="btn btn-outline-success" id="git-rename">Git File Across Renames</button></li>
+                        <li><button class="btn btn-outline-success" id="git-diffBranch">Git Diff Branches</button></li>
+                        <li><button class="btn btn-outline-success" id="git-showObject">Git Show Object</button></li>
                     </ul>
                 </div>
 
                 <div class="col-12 text-center hide " id="display-setup-7">
                     <button class="btn btn-check btn-primary" id="btn-update">SHARE & UPDATE REPOSITORY INFO</button>
-                    <ul class=" content-2 hide text-center" id="init-list">
-                        <li><button class="btn btn-outline-success" id="git-init">Git Remote Add</button></li>
-                        <li><button class="btn btn-outline-success" id="git-clone">Git Fetch</button></li>
-                        <li><button class="btn btn-outline-success" id="git-init">Git Merge Breanch</button></li>
-                        <li><button class="btn btn-outline-success" id="git-clone">Git Push Branches</button></li>
-                        <li><button class="btn btn-outline-success" id="git-init">Git pull</button></li>
+                    <ul class=" content-7 hide text-center" id="update-list">
+                        <li><button class="btn btn-outline-success" id="git-remoteAdd">Git Remote Add</button></li>
+                        <li><button class="btn btn-outline-success" id="git-fetch">Git Fetch</button></li>
+                        <li><button class="btn btn-outline-success" id="git-mergeBranchUp">Git Merge Breanch</button></li>
+                        <li><button class="btn btn-outline-success" id="git-pushBranch">Git Push Branches</button></li>
+                        <li><button class="btn btn-outline-success" id="git-pullBranch">Git pull Branch</button></li>
                     </ul>
                 </div>
 
                 <div class="col-12 hide text-center" id="display-setup-8">
                     <button class="btn btn-check btn-primary" id="btn-tracking">TRACKING PATH CHANGES REPOSITORY INFO</button>
-                    <ul class=" content-1-2" id="check-list">
-                        <li><button class="btn btn-outline-success" id="check-name">Git Removal Commit</button></li>
-                        <li><button class="btn btn-outline-success" id="check-email">Git Move Stage</button></li>
-                        <li><button class="btn btn-outline-success" id="check-email">Git Move Path</button></li>
+                    <ul class=" content-8 hide text-center" id="tracking-list">
+                        <li><button class="btn btn-outline-success" id="git-removal">Git Removal Commit</button></li>
+                        <li><button class="btn btn-outline-success" id="git-moveStage">Git Move Stage</button></li>
+                        <li><button class="btn btn-outline-success" id="git-movePath">Git Move Path</button></li>
                     </ul>
                 </div>
 
                 <div class="col-12 text-center hide " id="display-setup-9">
-                    <button class="btn btn-check btn-primary" id="btn-Re-Write">REWRITE HISTORY REPOSITORY INFO</button>
-                    <ul class=" content-2 hide text-center" id="init-list">
-                        <li><button class="btn btn-outline-success" id="git-init">Git Rebase</button></li>
-                        <li><button class="btn btn-outline-success" id="git-clone">Git Clear Stage Area</button></li>
+                    <button class="btn btn-check btn-primary" id="btn-rewrite">REWRITE HISTORY REPOSITORY INFO</button>
+                    <ul class=" content-9 hide text-center" id="rewrite-list">
+                        <li><button class="btn btn-outline-success" id="git-rebase">Git Rebase</button></li>
+                        <li><button class="btn btn-outline-success" id="git-clrStage">Git Clear Stage Area</button></li>
                     </ul>
                 </div>
 
                 <div class="col-12 text-center hide " id="display-setup-10">
                     <button class="btn btn-check btn-primary" id="btn-ignore">IGNORING PATTERNS REPOSITORY INFO</button>
-                    <ul class=" content-2 hide text-center" id="init-list">
-                        <li><button class="btn btn-outline-success" id="git-init">Git IGNORE</button></li>
+                    <ul class=" content-10 hide text-center" id="ignoret-list">
+                        <li><button class="btn btn-outline-success" id="git-ignore">Git IGNORE</button></li>
                     </ul>
                 </div>
 
                 <div class="col-12 text-center hide " id="display-setup-11">
                     <button class="btn btn-check btn-primary" id="btn-Temporary">TEMPORARY COMMITS REPOSITORY INFO</button>
-                    <ul class=" content-2 hide text-center" id="init-list">
-                        <li><button class="btn btn-outline-success" id="git-init">Git Stash</button></li>
-                        <li><button class="btn btn-outline-success" id="git-clone">Git Stash List</button></li>
-                        <li><button class="btn btn-outline-success" id="git-init">Git Stash Pop</button></li>
-                        <li><button class="btn btn-outline-success" id="git-clone">Git Stash Drop</button></li>
+                    <ul class=" content-11 hide text-center" id="temporary-list">
+                        <li><button class="btn btn-outline-success" id="git-stash">Git Stash</button></li>
+                        <li><button class="btn btn-outline-success" id="git-stashList">Git Stash List</button></li>
+                        <li><button class="btn btn-outline-success" id="git-stashPop">Git Stash Pop</button></li>
+                        <li><button class="btn btn-outline-success" id="git-stashDrop">Git Stash Drop</button></li>
                     </ul>
                 </div>
 
