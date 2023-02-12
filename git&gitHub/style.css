@@ -93,6 +93,7 @@ ul li {
   background-color: white;
   height: 50%;
   width:80%;
+  overflow: scroll;
   /* top: 30vh; */
   bottom: 2vh;
   left: 10%;
