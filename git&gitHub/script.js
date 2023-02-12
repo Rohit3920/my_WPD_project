@@ -10,9 +10,28 @@ function empty(){
     $("#display-setup-9").slideUp();
     $("#display-setup-10").slideUp();
     $("#display-setup-11").slideUp();
-}
+
+    fade();
+};
+
+function fade(){
+    $("#ser-list").fadeOut();
+    $("#check-list").fadeOut();
+    $("#init-list").fadeOut();
+    $("#stage-list").fadeOut();
+    $("#branch-list").fadeOut();
+    $("#inspect-list").fadeOut();
+    $("#update-list").fadeOut();
+    $("#tracking-list").fadeOut();
+    $("#rewrite-list").fadeOut();
+    $("#ignore-list").fadeOut();
+    $("#temporary-list").fadeOut();
+};
 
 $(document).ready(function () {
+
+                        // display-buttons show and hide Option jQuery
+
     $("#result").append(function(){
         $("#setup").click(function () { 
             empty();
@@ -65,9 +84,55 @@ $(document).ready(function () {
             $("#display-setup-11").slideDown();
         });
 
-        
 
 
+                    // display-subButtons show and hide Option jQuery
+
+                    $("#btn-set").click(function () {
+                        $("#check-list").hide();
+                        $("#set-list").fadeToggle();
+                    });
+                    
+                    $("#btn-check").click(function () {
+                        $("#set-list").hide();
+                        $("#check-list").fadeToggle();
+                    });
+
+                    $("#btn-init").click(function () { 
+                        $("#init-list").fadeToggle();
+                    });
+
+                    $("#btn-stage").click(function () { 
+                        $("#stage-list").fadeToggle();
+                    });
+
+                    $("#btn-branch").click(function () { 
+                        $("#branch-list").fadeToggle();
+                    });
+
+                    $("#btn-inspect").click(function () { 
+                        $("#inspect-list").fadeToggle();
+                    });
+
+                    $("#btn-update").click(function () { 
+                        $("#update-list").fadeToggle();
+                    });
+
+                    $("#btn-tracking").click(function () { 
+                        $("#tracking-list").fadeToggle();
+                    });
+
+                    $("#btn-rewrite").click(function () { 
+                        $("#rewrite-list").fadeToggle();
+                    });
+
+                    $("#btn-ignore").click(function () { 
+                        $("#ignore-list").fadeToggle();
+                    });
+
+                    $("#btn-temporary").click(function () { 
+                        $("#temporary-list").fadeToggle();
+                    });
 
 
     });

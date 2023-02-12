@@ -98,10 +98,10 @@
         <div class="container" id="txt">
             <div class="row content-1">
 
-
+                <div class="part-1">
                 <div class="col-6 hide text-right " id="display-setup-1">
                     <button class="btn btn-set btn-primary" id="btn-set">SET REPOSITORY INFO</button>
-                    <ul class="row content-1 " id="set-list">
+                    <ul class="row content-1 text-right hide" id="set-list">
                         <li><button id="set-name" class="btn btn-outline-success ">Set Name</button></li>
                         <li><button id="set-email" class="btn btn-outline-success">Set Email</button></li>
                         <li><button id="set-ui-color" class="btn btn-outline-success">Set Ui-color</button></li>
@@ -109,9 +109,9 @@
                 </div>
 
 
-                <div class="col-6 hide " id="display-setup-2">
+                <div class="col-6 hide text-left " id="display-setup-2">
                     <button class="btn btn-check btn-primary" id="btn-check">CHECK REPOSITORY INFO</button>
-                    <ul class=" content-2" id="check-list">
+                    <ul class=" content-2 text-left hide" id="check-list">
                         <li><button class="btn btn-outline-success" id="check-name">Check Name</button></li>
                         <li><button class="btn btn-outline-success" id="check-email">Check Email</button></li>
                     </ul>
@@ -190,13 +190,13 @@
 
                 <div class="col-12 text-center hide " id="display-setup-10">
                     <button class="btn btn-check btn-primary" id="btn-ignore">IGNORING PATTERNS REPOSITORY INFO</button>
-                    <ul class=" content-10 hide text-center" id="ignoret-list">
+                    <ul class=" content-10 hide text-center" id="ignore-list">
                         <li><button class="btn btn-outline-success" id="git-ignore">Git IGNORE</button></li>
                     </ul>
                 </div>
 
                 <div class="col-12 text-center hide " id="display-setup-11">
-                    <button class="btn btn-check btn-primary" id="btn-Temporary">TEMPORARY COMMITS REPOSITORY INFO</button>
+                    <button class="btn btn-check btn-primary" id="btn-temporary">TEMPORARY COMMITS REPOSITORY INFO</button>
                     <ul class=" content-11 hide text-center" id="temporary-list">
                         <li><button class="btn btn-outline-success" id="git-stash">Git Stash</button></li>
                         <li><button class="btn btn-outline-success" id="git-stashList">Git Stash List</button></li>
@@ -205,7 +205,7 @@
                     </ul>
                 </div>
 
-
+            </div>
 
 
 
@@ -216,7 +216,10 @@
 
 
                 <div id="result">
+
+                
                     <!-- Setup content -->
+
                     <div id="setup-content">
                         <div id="set-name-value" class="hide">
                             <h4><b>git config --global user.name “[firstname lastname]”</b></h4><br><br>
@@ -236,11 +239,9 @@
                             <p>set automatic command line coloring for Git for easy reviewing</p>
                         </div>
 
+                    </div>
 
-
-
-
-                        <!-- check content -->
+                        
 
                         <div id="check-content">
                             <div id="check-name-content" class="hide">
@@ -254,7 +255,7 @@
                             </div>
                         </div>
 
-                    </div>
+                        
 
                     <div id="init-content">
                         <div id="init-value" class="hide">
@@ -269,7 +270,51 @@
                         </div>
                     </div>
 
-                </div>
+
+                    <!-- stage contant -->
+
+                    <div id="stage-content">
+                        <div id="status-value" class="hide">
+                            <h4><b>git status</b></h4><br><br>
+                            <p>show modified files in working directory, staged for your next commit</p>
+                        </div>
+
+                        <div id="add-value" class="hide">
+                            <h4><b>git add [file] </b></h4><br><br>
+                            <p>add a file as it looks now to your next commit (stage)
+                            </p>
+                        </div>
+
+                        <div id="reset-value" class="hide">
+                            <h4><b>git reset [file] </b></h4><br><br>
+                            <p>unstage a file while retaining the changes in working directory</p>
+                        </div>
+
+                        <div id="diff-value" class="hide">
+                            <h4><b>git diff </b></h4><br><br>
+                            <p>diff of what is changed but not staged</p>
+                        </div>
+
+                        <div id="diff-stage-value" class="hide">
+                            <h4><b>git diff --staged </b></h4><br><br>
+                            <p>diff of what is staged but not yet commited</p>
+                        </div>
+
+                        <div id="commit-value" class="hide">
+                            <h4><b>git commit -m “[descriptive message]” </b></h4><br><br>
+                            <p>commit your staged content as a new commit snapshot</p>
+                        </div>
+
+                        <!-- <div id="" class="hide">
+                            <h4><b>git </b></h4><br><br>
+                            <p>   </p>
+                        </div> -->
+                    </div>
+
+
+
+
+                </div>    <!--   result close -->
 
 
 
