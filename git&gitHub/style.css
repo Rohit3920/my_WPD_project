@@ -76,7 +76,6 @@ ul li {
 
 #section-2 .container {
   border: 2px solid black;
-  height: 80vh;
   position: relative;
   background-color: rgb(231, 230, 230);
   margin: 10px auto 90px auto;
@@ -88,15 +87,11 @@ ul li {
   display: none;
 }
 #section-2 #result {
-  position: absolute;
   border: 2px solid black;
   background-color: white;
   height: 50%;
   width:80%;
   overflow: scroll;
-  /* top: 30vh; */
-  bottom: 2vh;
-  left: 10%;
   text-align: center;
   padding: 20px;
 }

@@ -26,6 +26,8 @@ function fade() {
     $("#rewrite-list").fadeOut();
     $("#ignore-list").fadeOut();
     $("#temporary-list").fadeOut();
+
+    hideContent();
 };
 
 function hideContent() {
